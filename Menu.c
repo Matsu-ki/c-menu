@@ -27,19 +27,19 @@ int main(void){
 		puts("|*******************************************|");
 		puts("|              MENU PRINCIPAL               |");
 		puts("|*******************************************|");
-		puts("| 1 - C�lculo de m�dia anual de temperatura |");
+		puts("| 1 - Calculo de media anual de temperatura |");
 		puts("| 2 - Jogo da senha                         |");
-		puts("| 3 - M�dia salarial                        |");
-		puts("| 4 - C�lculo de conta telef�nica           |");
+		puts("| 3 - Media salarial                        |");
+		puts("| 4 - Calculo de conta telefonica           |");
 		puts("| 5 - Imposto a pagar                       |");
-		puts("| 6 - Identifica��o de triangulos           |");
+		puts("| 6 - Identificacao de triangulos           |");
 		puts("| 7 - Empresa de vendas                     |");
 		puts("| 8 - Crescimento populacional              |");
 		puts("| 9 - Tabela de valores de lucro de teatro  |");
-		puts("| 10 - Verificar n�mero primo               |");
+		puts("| 10 - Verificar numero primo               |");
 		puts("| 11 - Sair do sistema                      |");
 		puts("|*******************************************|");
-		printf("Para onde voc� deseja ir? ");
+		printf("Para onde voce deseja ir? ");
 		scanf("%i", &comando);
 		
 		switch(comando){
@@ -150,7 +150,7 @@ int main(void){
 			break;
 				
 			default:
-				puts("Op��o invalida!");
+				puts("Opcao invalida!");
 				system("pause");
 		}
 		
@@ -227,13 +227,13 @@ void jogo_senha(void){
 		scanf("%i", &p2);
 			
 		if(i != 5 && p1 < p2){
-			puts("Seha incorreta... Est� alto");
+			puts("Seha incorreta... Esta alto");
 			system("pause");
 		}else if(i != 5 && p1 > p2){
-			puts("Senha incorreta... Est� baixo");
+			puts("Senha incorreta... Esta baixo");
 			system("pause");
 		}else if(p1 == p2){
-			puts("Parabens... Voc� acertou a senha!!!");
+			puts("Parabens... Voce acertou a senha!!!");
 			system("pause");
 		}
 	}
@@ -250,7 +250,7 @@ void media_salarial(void){
 	
 	do{
 		system("cls");
-		puts("|******************************** M�dia salarial *******************************|");
+		puts("|******************************** Media salarial *******************************|");
 		puts("|*******************************************************************************| \n");
 		printf("Digite '1' para funcionario feminino ou digite '2' para funcionario masculino: ");
 		scanf("%i", &sexo);
@@ -284,10 +284,10 @@ void media_salarial(void){
 	media_salM = total_salM / total_funcM;
 	
 	system("cls");
-	puts("|************* M�dia salarial **************|");
+	puts("|************* Media salarial **************|");
 	puts("|*******************************************| \n");
 	
-	printf("Total de funcion�rios analisados: %i \n", total_func);
+	printf("Total de funcionerios analisados: %i \n", total_func);
 	printf("Quantidade de funcionarios mulheres: %i \n", total_funcF);
 	printf("Quantidade de funcionarios homens: %i \n", total_funcM);
 	
@@ -314,9 +314,9 @@ void conta_telefonica(void){
 		
 		system("cls");
 		puts("|***********************************|");
-		puts("|    C�lculo de conta telef�nica    |");
+		puts("|    Calculo de conta telefonica    |");
 		puts("|***********************************|");
-		puts("|       LIGA��ES INTERURBANAS:      |");
+		puts("|       LIGACOES INTERURBANAS:      |");
 		puts("| 1- Residencial: R$2.00 por minuto |");
 		puts("| 2-  Comercial:  R$4.00 por minuto |");
 		puts("|***********************************|");
@@ -339,7 +339,7 @@ void conta_telefonica(void){
 					case 1:
 						puts("|***********************************|");
 						valor_total = 50 + valor_inter;
-						printf("Valor total de liga��es interurbanas: R$ %.2f \n", valor_inter);
+						printf("Valor total de ligacoes interurbanas: R$ %.2f \n", valor_inter);
 						printf("Valor total da conta: R$ %.2f \n", valor_total);
 						system("pause");
 					break;
@@ -347,19 +347,19 @@ void conta_telefonica(void){
 					case 2:
 						puts("|***********************************|");
 						valor_total = 100 + valor_inter;
-						printf("Valor total de liga��es interurbanas: R$ %.2f \n", valor_inter);
+						printf("Valor total de ligacoes interurbanas: R$ %.2f \n", valor_inter);
 						printf("Valor total da conta: R$ %.2f \n", valor_total);
 						system("pause");
 					break;
 					
 					default:
-						puts("Op��o invalida!");
+						puts("Opcao invalida!");
 						system("pause");
 				}
 			break;
 				
 			case 2:
-				puts("Digite a quantidade de minutos em liga��es interurbanas: ");
+				puts("Digite a quantidade de minutos em ligacoes interurbanas: ");
 				scanf("%i", &min_inter);
 				valor_inter = min_inter * 4;
 				puts("Agora digite sua banda larga(1 ou 2): ");
@@ -369,7 +369,7 @@ void conta_telefonica(void){
 					case 1:
 						puts("|***********************************|");
 						valor_total = 50 + valor_inter;
-						printf("Valor total de liga��es interurbanas: R$ %.2f \n", valor_inter);
+						printf("Valor total de ligacoes interurbanas: R$ %.2f \n", valor_inter);
 						printf("Valor total da conta: R$ %.2f \n", valor_total);
 						system("pause");
 					break;
@@ -377,19 +377,19 @@ void conta_telefonica(void){
 					case 2:
 						puts("|***********************************|");
 						valor_total = 100 + valor_inter;
-						printf("Valor total de liga��es interurbanas: R$ %.2f \n", valor_inter);
+						printf("Valor total de ligacoes interurbanas: R$ %.2f \n", valor_inter);
 						printf("Valor total da conta: R$ %.2f \n", valor_total);
 						system("pause");
 					break;
 					
 					default:	
-						puts("Op��o invalida!");
+						puts("Opcao invalida!");
 						system("pause");
 				}
 			break;
 			
 			default:
-				puts("Op��o invalida!");
+				puts("Opcao invalida!");
 				system("pause");	
 		}
 }
@@ -477,7 +477,7 @@ void identifi_triangulo(void){
 	setlocale(LC_ALL, "Portuguese");
 	
 	system("cls");
-	puts("|******* Identifica��o de triangulos *******|");
+	puts("|******* Identificacao de triangulos *******|");
 	printf("Lado 1 do triangulo: ");
 	scanf("%f", &lado[0]);
 	printf("Lado 2 do triangulo: ");
@@ -492,29 +492,29 @@ void identifi_triangulo(void){
 		
 		if(lado[0] == lado[1] && lado[0] == lado[2]){
 		system("cls");
-		puts("|******* Identifica��o de triangulos *******|");
+		puts("|******* Identificacao de triangulos *******|");
 		puts("|*******************************************|");
-		puts("|* Tri�ngulo Equil�tero: tr�s lados iguais *|");
+		puts("|* Triangulo Equilatero: tres lados iguais *|");
 		puts("\n");
 		system("pause");
 		}else if(lado[0] == lado[1] || lado[0] == lado[2] || lado[1] == lado[2]){
 		system("cls");
-		puts("|******* Identifica��o de triangulos *******|");
+		puts("|******* Identificacao de triangulos *******|");
 		puts("|*******************************************|");
-		puts("|* Tri�ngulo Is�sceles: dois lados iguais  *|");
+		puts("|* Triangulo Isosceles: dois lados iguais  *|");
 		puts("\n");
 		system("pause");
 		}else if(lado[0] != lado[1] || lado[0] != lado[2] || lado[1] != lado[2]){
 		system("cls");
-		puts("|******* Identifica��o de triangulos *******|");
+		puts("|******* Identificacao de triangulos *******|");
 		puts("|*******************************************|");
-		puts("| Tri�ngulo Escaleno: tr�s lados diferentes |");
+		puts("| Triangulo Escaleno: tres lados diferentes |");
 		puts("\n");	
 		system("pause");
 		}
 		
 	}else{
-		puts("Os tr�s lados N�O formam um triangulo!");
+		puts("Os tres lados NAO formam um triangulo!");
 	}
 }
 
@@ -533,15 +533,15 @@ void empresa_vendas(void){
 		system("cls");
 		puts("|************ Empresa de vendas ************|");
 		puts("|*******************************************|");
-		puts("|              Tempo             |  C�digo  |");
+		puts("|              Tempo             |  Codigo  |");
 		puts("|*******************************************|");
 		puts("|         Mais de 10 anos        |    A     |");
 		puts("|        Entre 5 e 10 anos       |    B     |");
 		puts("|         Menos de 5 anos        |    C     |");
 		puts("|*******************************************|");
 	
-		printf("Vendedor n� %i: \n", i);
-		printf("Tempo de servi�o(c�digo): ");
+		printf("Vendedor na %i: \n", i);
+		printf("Tempo de servioo(codigo): ");
 		fflush(stdin);
 		scanf("%c", &cod);
 		
@@ -579,11 +579,11 @@ void empresa_vendas(void){
 	}
 	
 	if(totalDespA > totalDespB && totalDespA > totalDespC){
-		printf("Faixa de tempo de servi�o que apresenta maior despesa com viagem: 'A' \n");
+		printf("Faixa de tempo de servico que apresenta maior despesa com viagem: 'A' \n");
 	}else if(totalDespB > totalDespA && totalDespB > totalDespC){
-		printf("Faixa de tempo de servi�o que apresenta maior despesa com viagem: 'B' \n");
+		printf("Faixa de tempo de servico que apresenta maior despesa com viagem: 'B' \n");
 	}else{
-		printf("Faixa de tempo de servi�o que apresenta maior despesa com viagem: 'C' \n");
+		printf("Faixa de tempo de servico que apresenta maior despesa com viagem: 'C' \n");
 	}
 	
 	mediaVendasC = totalVendasC / totalC;
@@ -608,8 +608,8 @@ void cresc_populacional(void){
 	system("cls");
 	puts("|******** Crescimento populacional *********| \n");
 	
-	puts("Cidade 'A'... Popula��o: 90.000     Taxade crescimento populacional por ano: 3%");
-	puts("Cidade 'B'... Popula��o: 300.000    Taxade crescimento populacional por ano: 1,2% \n");
+	puts("Cidade 'A'... Populacao: 90.000     Taxade crescimento populacional por ano: 3%");
+	puts("Cidade 'B'... Populacao: 300.000    Taxade crescimento populacional por ano: 1,2% \n");
 				
 	while(a < b){
 		a = a + (a * 0.03);
@@ -617,7 +617,7 @@ void cresc_populacional(void){
 		ano++;
 	}
 	
-	printf("A cidade 'A' ir� igualar ou utrapassar cidade 'B' em %i anos. \n", ano);
+	printf("A cidade 'A' ira igualar ou utrapassar cidade 'B' em %i anos. \n", ano);
 	printf("\n");
 	system("pause");
 }
@@ -650,10 +650,10 @@ void tabela_teatro(void){
 	
 	puts("|************************************|");
 	
-	puts("|A melhor configura��o � a seguinte: | \n");
+	puts("|A melhor configuracao e a seguinte: | \n");
 	printf(" Venda de ingressos a %i reais. \n", valor_max);
-	printf(" Ir�o %i pessoas. \n", quant_max);
-	printf(" Obtendo lucro m�ximo de %i reais. \n", lucro_max);
+	printf(" Irao %i pessoas. \n", quant_max);
+	printf(" Obtendo lucro maximo de %i reais. \n", lucro_max);
 	printf("\n");
 	system("pause");
 }
@@ -664,8 +664,8 @@ void numero_primo(void){
 	setlocale(LC_ALL, "Portuguese");
 	
 	system("cls");
-	puts("|********* Verificar n�mero primo **********|");
-	printf("Digite o n�mero que deseja verificar: ");
+	puts("|********* Verificar numero primo **********|");
+	printf("Digite o numero que deseja verificar: ");
 	scanf("%i", &num);
 	
 	for(i = 2; i <= num /2; i++){
@@ -676,12 +676,12 @@ void numero_primo(void){
 	
 	if(verific == 0){
 		printf("\n");
-		printf("%i � um n�mero primo. \n", num);
+		printf("%i e um numero primo. \n", num);
 		printf("\n");
 		system("pause");
 	}else{
 		printf("\n");
-		printf("%i n�o � um n�mero primo. \n", num);
+		printf("%i nao e um numero primo. \n", num);
 		printf("\n");
 		system("pause");
 	}	
